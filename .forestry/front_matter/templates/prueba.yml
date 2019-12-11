@@ -1,4 +1,16 @@
 ---
 label: Prueba
 hide_body: true
-fields: []
+fields:
+- name: seleccion
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Seleccion
