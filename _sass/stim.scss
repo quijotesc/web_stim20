@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/************
+ * Font
+ ************/
+
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font_01: "Ubuntu" !default; 
+$font_02: Arial !default;
+
+$font_color_00: #000000 !default;
+$font_color_01: #FFFFFF !default;
+$font_color_02: #000000 !default;
+
+$base-font-size: 16px !default;
+$base-font-weight: 400 !default;
+
+$small-font-size: $base-font-size * 0.875 !default;
+$nav-font-size: $base-font-size !default;
+$footer-font-size: $base-font-size * 0,8 !default;
+
+$base-line-height: 1.5 !default;
+$spacing-unit: 30px !default;
+
+
+/************
+ * Color
+ ************/
+
+$text-color: rgb(0, 0, 0) !default;
+$brand-color: #ffffff !default;
+
+$bg_color_00: #ffffff !default;
+$bg_color_01: #3C4E62 !default;
+$bg_color_02: #DE9C01 !default;
+$bg_color_03: #85bb97 !default;
+
+$bg_color_nav: rgba(255, 255, 255, 0.85);
+$bg_color_footer:#3C4E62 !default;
+
+$color_01: #E0BC75 !default;
+$color_02: #008000 !default; 
+
+$grey-color: #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+$table-text-align: left !default;
+
+
+/*******************
+ * Cards
+ *******************/
+ 
+$card_radius: 13px;
+$card-border: 17px;
+$card-padding: 0px 0 0 0;
+$card-margin: 3px 0 0 0;
+
+
+/*******************
+ * Responsive layout
+ *******************/
+
+$content-width: auto !default;
+
+$on-small: 600px !default;
+$on-medium: 800px !default;
+$on-laptop: 1060px !default;
+
+// ****** //
+// MIXINS  
+// ****** //
+
+@mixin media-query($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// *************** //
+// IMPORT PARTIALS
+// *************** //
+
+@import
+  "stim/normalize",
+  "stim/base",
+  "stim/layout",
+  "stim/header",
+  "stim/footer", 
+  "stim/modules/portada",
+  "stim/modules/cursos",
+  "stim/modules/escuela",
+  "stim/modules/faqs";

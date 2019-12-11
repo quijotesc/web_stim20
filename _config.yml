@@ -1,61 +1,37 @@
-encoding: utf-8
+# Welcome to STiM website!
 
-title: STiM - Spanish Teachers in Málaga
-email: info@spanishteachersmalaga.com
-description: >- # ignore newlines until "baseurl:"
-  Spanish courses in Málaga. Learn Spanish.
+title: Spanish Teachers in Málaga
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: quijotesc
-facebook_username: spanishteachersmalaga
 future: true
 safe: true
-markdown: kramdown
-kramdown:
-  parse_block_html: true
+
+email: info@spanishteachersmalaga.com
+phone: +34 619140300
+address_1: Plaza Victoria 6, 1ºB
+address_2: 29012 - Málaga
+
+github_username: quijotesc
+facebook_username: stimalaga
+twitter_username: stimalaga
 
 myimage.path: "./assets/img/"
 
 
-sass:
-  sass_dir: _sass
-  style: :nested
-  
-# MY COLLECTIONS #
+# Build settings
+markdown: kramdown
+kramdown:
+  parse_block_html: true
 
 collections:
-  teachers:
-    output: true
   products:
     output: true
-
-# DEFAULTS #
-    
+  faqs:
+    output: true
+  
 defaults:
   - scope:
       path: "assets/img"
     values:
       image: true
-  - scope:
-      path: ""
-      type: "teachers"
-    values:
-      layout: "teacher"
-  - scope:
-      path: ""
-      type: "products"
-    values:
-      layout: "product"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-      
-# PLUGINS #
-
 

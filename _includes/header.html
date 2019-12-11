@@ -1,0 +1,24 @@
+<header class="grid-item site-header">
+  <nav class="nav-logo">
+      <img src="{{ site.baseurl }}/assets/img/logo.png" alt="Spanish Teachers in Málaga">
+  </nav>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    
+  {%- assign default_paths = site.data.nav_header | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths -%}
+  
+  <nav class="site-nav">
+      {%- if page_paths -%}
+        {% for item in site.data.nav_header %}
+          {%- if item.name -%}
+            <a href="{{ item.link | relative_url }}">{{ item.name | escape }}</a>
+          {%- endif -%}
+        {% endfor %} 
+      {%- endif -%}  
+  </nav>
+
+  <!-- Este label se utiliza para el funcionamiento del menú de navegación (las tres rayitas)-->
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+</header>

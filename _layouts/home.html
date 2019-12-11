@@ -1,31 +1,73 @@
 ---
 layout: default
+title: home
 ---
 
 <div class="grid-container">
-	<div class="grid-header">
-	    {% include _body/header.html %}
+	
+	<!-- HEADER -->
+	{% include header.html %}
+	
+	<!-- PORTADA -->
+
+	<div class="grid-item portada">
+		<img class="portada-logo" src="{{ site.baseurl }}/assets/img/logo.png" alt="logo">
+		<img class="portada-img" src="{{ site.baseurl }}/assets/img/cabecera_home.jpg" alt="imagen">
+		<button class="btn_01"> BOOK NOW</button>
 	</div>
 
-	<div class="grid-cursos">
-	    {% include _body/cursos.html %}
+	<!-- CURSOS -->
+	<div class="grid-item cursos">
+		<h2 class="section-title">Spanish Courses</h2>
+		{% for product in site.products %}
+		<div class="card-container">
+			<div class="card-cursos">
+				{{ product.content }}
+			</div>
+		</div>
+		{% endfor %}
+		<h3>All courses include</h3>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>	
+			<li></li>
+
+		</ul>
 	</div>
 
-	<div class="grid-school">
-	    {% include _body/school.html %}
+	<!-- LA ESCUELA -->
+	<div class="grid-item">
+		<h2 class="section-title">THE SCHOOL</h2>
+		<div class="card-escuela">
+			<p>Un montón de cositas que te contamos de nuestra escuela</p>
+			<div class="grid-goglemap">
+				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12791.306484713266!2d-4.414786!3d36.726725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbe97f2a33e9d6b70!2sSpanish+Teachers+in+M%C3%A1laga!5e0!3m2!1ses!2ses!4v1548349961692" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>	
 	</div>
 
-	<div class="grid-faqs">
-	    {% include _body/faqs.html %}
+	<!-- FAQS -->
+	<div class="grid-item">
+		<h2 class="section-title">FAQs</h2>
+		{% for faq in site.faqs %}
+		<div class="faq-accordion">
+			{{ faq.content }}
+		</div>
+		{% endfor %}
 	</div>
 
-	<div class="grid-contact">
-	    {% include contact.html %}
+	<!-- CONTACTO -->
+	<div class="grid-item">
+		<h2 class="section-title">CONTACTO</h2>
+		<p>BONITO FORMULARIO DE CONTACTO</p>
 	</div>
 
-	<div class="grid-footer">
-	    {% include _body/footer.html %}
-	</div>	
+	<!-- FOOTER -->
+	{% include footer.html %}	
+
 </div>
 
 

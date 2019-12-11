@@ -1,11 +1,32 @@
 ---
-short_name: ext
-name: GROUP
-sub_name: 4 hours / week
-desc1: "Class size: 3 - 6 students"
-desc2: "Learning material included"
-price1: "4 weeks : 96 €"
-price2: "8 weeks : 188 €"
-price3: "12 weeks : 275 €"
-price4: "16 weeks : 350 €"
+name: Group
+desc: "4 hours per week"
+desc2: "Class size: 3 - 6 students"
+desc3: "Learning material included"
+price1: "6,00"
+price2: "5,50"
+price3: "5,00"
 ---
+
+## {{ page.name }}
+{: .card-title}
+
+{{ page.desc }}
+{: .card-desc}
+
+{{ page.desc2 }}
+{: .card-desc}
+
+{{ page.desc3 }}
+{: .card-desc}
+
+HOURS | PRICE
+-------|---------
+1 to 29  | {{ page.price1 }} €/h
+30 to 59 | {{ page.price2 }} €/h
+60 to 99 | {{ page.price3 }}  €/h
+{: .card-price}
+
+[BOOK NOW]({{ baseurl }}){: .btn_01 .btn-book}
+[+info]({{ baseurl }}){: .btn_02 .btn-info}
+{: .card-buttons}

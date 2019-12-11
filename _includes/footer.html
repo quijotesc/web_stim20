@@ -1,0 +1,34 @@
+<footer class="site-footer">
+  
+  <!-- LOGO - Cambiar por el logo, ahora aparece el Title de la página en _config.yml -->
+  <nav class="nav-logo">
+      <img src="{{ site.baseurl }}/assets/img/logo_blanco.jpg" alt="LocuTalents">
+  </nav>
+
+  <!--LA ESCUELA / CONTACTO -->
+  <nav class="nav-escuela">
+      <h2 class="footer-heading">La Escuela</h2>
+      {%- if site.address_1 -%}
+      <p class="" > {{ site.address_1 }} </p>
+      {%- endif -%}
+      {%- if site.address_2 -%}
+      <p class="" > {{ site.address_2 }} </p>
+      {%- endif -%}
+      {%- if site.phone-%}
+      <p class="" > {{ site.phone }} </p>
+      {%- endif -%}
+      {%- if site.email -%}
+      <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      {%- endif -%}
+    </nav>
+
+  <!-- NAV. REDES SOCIALES  -->
+  {%- include social.html -%}
+
+  <!--TRABAJA CON NOSOTROS -->
+  <nav class="nav-trabaja">
+    <h2 class="footer-heading">CONTACTA CON NOSOTROS</h2>
+    <a href="work_form.html">Pincha aquí si quieres más información sobre algún curso</a>
+  </nav>
+      
+</footer>

@@ -1,0 +1,21 @@
+/*******************
+*      PORTADA
+********************/ 
+
+.portada {
+
+    overflow: hidden;
+}
+
+.portada-img {
+
+    grid-column: 1 / -1;
+    z-index: -10;
+    object-fit: cover;
+}
+
+.portada-logo {
+
+    grid-column: 1 / -1;
+
+}

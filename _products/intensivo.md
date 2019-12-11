@@ -1,11 +1,32 @@
 ---
-short_name: int
-name: INTENSIVE
-sub_name: 20 hours / week
-desc1: "Class size: 3 - 6 students"
-desc2: "Learning material included"
-price1: "1 week : 150 €"
-price2: "2 weeks : 285 €"
-price3: "3 weeks : 405 €"
-price4: "4 weeks : 510 €"
+name: Intensive Groups
+desc: "20 hours per week"
+desc2: "Class size: 3 - 6 students"
+desc3: "Learning material included"
+price1: "6,00"
+price2: "5,50"
+price3: "5,00"
 ---
+
+## {{ page.name }}
+{: .card-title}
+
+{{ page.desc }}
+{: .card-desc}
+
+{{ page.desc2 }}
+{: .card-desc}
+
+{{ page.desc3 }}
+{: .card-desc}
+
+HOURS | PRICE
+-------|---------
+1 to 29  | {{ page.price1 }} €/h
+30 to 59 | {{ page.price2 }} €/h
+60 to 99 | {{ page.price3 }}  €/h
+{: .card-price}
+
+[BOOK NOW]({{ baseurl }}){: .btn_01 .btn-book}
+[+info]({{ baseurl }}){: .btn_02 .btn-info}
+{: .card-buttons}
