@@ -1,0 +1,13 @@
+<!-- FAQS -->
+<h2>FAQs</h2>
+{% for faq in site.data.faqs %}
+	<div class="grid-item-cat">
+		<h3>{{ faq.title }}</h3>
+		{% for subcategory in faq.subcategories %}
+			{% for item in subcategory.items %}
+			<div class="pregunta"> {{ item.pregunta }} </div>
+			<div class="respuesta">{{ item.respuesta }} </div>
+			{% endfor %}
+		{% endfor %}
+	</div>
+{% endfor %}

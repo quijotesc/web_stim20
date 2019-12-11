@@ -1,0 +1,6 @@
+<!-- NAVIGATION -->
+{% for item in site.data.rrss %}
+<a href="{{ item.link }}">{{ item.name }}
+<img border="0" alt="{{ item.name }}" src="{{ item.imagelink }}" width="10" height="10">
+</a>
+{% endfor %}

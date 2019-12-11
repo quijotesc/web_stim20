@@ -1,0 +1,60 @@
+- title: "Our School"
+  subcategories:
+    - items:
+        - pregunta: "Pregunta 1"
+          respuesta: "Respuesta 1"
+    
+- title: "Registration"
+  subcategories:
+    - items:
+        - pregunta: "Pregunta 1"
+          respuesta: "Respuesta 1"
+    - items:
+        - pregunta: "Pregunta 2"
+          respuesta: "Respuesta 2"
+    - items:
+        - pregunta: "Pregunta 3"
+          respuesta: "Respuesta 3"
+    - items:
+        - pregunta: "Pregunta 4"
+          respuesta: "Respuesta 4"
+          
+- title: "Accomodation"
+  subcategories:
+    - items:
+        - pregunta: "Pregunta 1"
+          respuesta: "Respuesta 1"
+    - items:
+        - pregunta: "Pregunta 2"
+          respuesta: "Respuesta 2"
+          
+- title: "Cultural programm"
+  subcategories:
+    - items:
+        - pregunta: "Pregunta 1"
+          respuesta: "Respuesta 1"
+    - items:
+        - pregunta: "Pregunta 2"
+          respuesta: "Respuesta 2"
+    - items:
+        - pregunta: "Pregunta 3"
+          respuesta: "Respuesta 3"
+    
+- title: "Terms & Conditions"
+  subcategories:
+    - items:
+        - pregunta: "Pregunta 1"
+          respuesta: "Respuesta 1"
+    - items:
+        - pregunta: "Pregunta 2"
+          respuesta: "Respuesta 2"
+    - items:
+        - pregunta: "Pregunta 3"
+          respuesta: "Respuesta 3"
+    - items:
+        - pregunta: "Pregunta 4"
+          respuesta: "Respuesta 4"
+          
+          
+          
+
