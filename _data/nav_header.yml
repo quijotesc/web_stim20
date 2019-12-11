@@ -1,5 +1,9 @@
 - name: Home
   link: /
+- name: Cursos
+  link: /
+- name: Contacto
+  link: /
 - name: About
   link: /about.html
 - name: Blog

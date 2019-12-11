@@ -8,7 +8,8 @@ price2: "17,00"
 price3: "16,50"
 ---
 
-## {{ page.name }}
+# {{ page.name }}
+
 {: .card-title}
 
 {{ page.desc }}
