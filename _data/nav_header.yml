@@ -2,9 +2,11 @@
   link: /
 - name: Cursos
   link: /
-- name: Contacto
+- name: La Escuela
   link: /
 - name: About
   link: /about.html
 - name: Blog
   link: /blog.html
+- name: Contacto
+  link: /

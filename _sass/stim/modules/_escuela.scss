@@ -2,12 +2,12 @@
 *      LA ESCUELA
 ********************/ 
 
+.escuela {
 
-.card-escuela {
-
-    grid-column-end: span 6;
+    grid-column: 2 / span 1;
 
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     text-align: left;
 }
