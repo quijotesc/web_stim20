@@ -1,5 +1,28 @@
 @charset "utf-8";
 
+
+/************
+ * Color
+ ************/
+
+ $text-color: rgb(0, 0, 0) !default;
+ $brand-color: #3c4e62 !default;
+ 
+ $bg_color_00: #ffffff !default;
+ $bg_color_01: #3c4e62 !default;
+ $bg_color_02: #DE9C01 !default;
+ $bg_color_03: #85bb97 !default;
+ 
+ $bg_color_nav: rgba(60, 78, 98, 0.85);
+ $bg_color_footer:#3C4E62 !default;
+ 
+ $color_01: #E0BC75 !default;
+ $color_02: #008000 !default; 
+ 
+ $grey-color: #828282 !default;
+ $grey-color-light: lighten($grey-color, 40%) !default;
+ $grey-color-dark:  darken($grey-color, 25%) !default;
+
 /************
  * Font
  ************/
@@ -8,7 +31,7 @@ $base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvet
 $font_01: "Ubuntu" !default; 
 $font_02: Arial !default;
 
-$font_color_00: #000000 !default;
+$font_color_00: $brand-color !default;
 $font_color_01: #FFFFFF !default;
 $font_color_02: #000000 !default;
 
@@ -24,27 +47,6 @@ $base-line-height: 1.5 !default;
 $spacing-unit: 30px !default;
 
 
-/************
- * Color
- ************/
-
-$text-color: rgb(0, 0, 0) !default;
-$brand-color: #ffffff !default;
-
-$bg_color_00: #ffffff !default;
-$bg_color_01: #3C4E62 !default;
-$bg_color_02: #DE9C01 !default;
-$bg_color_03: #85bb97 !default;
-
-$bg_color_nav: rgba(255, 255, 255, 0.85);
-$bg_color_footer:#3C4E62 !default;
-
-$color_01: #E0BC75 !default;
-$color_02: #008000 !default; 
-
-$grey-color: #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
 
 $table-text-align: left !default;
 

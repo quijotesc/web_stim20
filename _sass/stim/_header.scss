@@ -13,153 +13,167 @@
   top: 0;
   height: 100%;
 
-  align-content: center;
-}
+  display: grid;
+  grid-template-columns: 15px repeat(12, 1fr) 15px;
+  grid-gap: 20px;
+  justify-items: center;
 
-/** Logo ***/
+  .nav-logo {
 
-.nav-logo {
-
-  img {
-    margin-left: 1em;
-    max-width: 40px;
+    img {
+      margin-left: 1em;
+      max-width: 40px;
+    }
   }
+  .nav-toggle {
+    display:none;
+  }
+
+  /** Botón para mostrar menús  ***/
+  .nav-toggle-label{ 
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .nav-toggle-label span, 
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+
+    display: block;
+    background-color: $font_color_02;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+  }
+  
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+
+    content: '';
+    position: absolute;
+  }
+
+  .nav-toggle-label span::before {
+    bottom: 7px;
+  }
+  .nav-toggle-label span::after {
+    top: 7px;
+  }
+    
+  .site-nav {
+
+    background-color: $bg_color_nav;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    transform: scale(1,0); /** Usamos transform en lugar de display:none para poder aplicarle Transition **/
+    transform-origin: top; /** Con este transform hacemos que se despliegue desde arriba **/
+    transition: transform 400ms ease-in-out; /** Esta transición despliega el menú **/
+
+    a {
+      margin-bottom: 1em;
+      margin-right: 1em;
+      color: $font_color_02;
+      text-decoration: none;
+      font-size: $nav-font-size;
+      text-transform: uppercase;
+      display: block;
+      text-align: right; 
+      opacity: 0; /** Esconde los links para que la transición del menú sea bonita **/
+      transition: opacity 200ms ease-in-out;
+    }
+
+    a:hover {
+      color: $color_02;
+    }
+  } 
+
+  /** Sirve para transformar la navegación cuando pulsamos el "botón" de menú**/
+  .nav-toggle:checked ~ nav { 
+    transform: scale(1,1);
+  }
+
+  /** Sirve para transformar los links cuando pulsamos el "botón" de menú**/
+  .nav-toggle:checked ~ nav a { 
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+  }
+
 }
 
-.nav-toggle {
-  display:none;
-}
 
-/** Botón para mostrar menús  ***/
-.nav-toggle-label{ 
 
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 1em;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
 
-.nav-toggle-label span, 
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
 
-  display: block;
-  background-color: $font_color_02;
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-
-  content: '';
-  position: absolute;
-}
-
-.nav-toggle-label span::before {
-  bottom: 7px;
-}
-.nav-toggle-label span::after {
-  top: 7px;
-}
-/** FIN Botón para mostrar menús  ***/
 
 /** NAVIGATION ***/
 
-.site-nav {
-
-  background-color: $bg_color_nav;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  transform: scale(1,0); /** Usamos transform en lugar de display:none para poder aplicarle Transition **/
-  transform-origin: top; /** Con este transform hacemos que se despliegue desde arriba **/
-  transition: transform 400ms ease-in-out; /** Esta transición despliega el menú **/
-
-  a {
-    margin-bottom: 1em;
-    margin-right: 1em;
-    color: $font_color_02;
-    text-decoration: none;
-    font-size: $nav-font-size;
-    text-transform: uppercase;
-    display: block;
-    text-align: right; 
-    opacity: 0; /** Esconde los links para que la transición del menú sea bonita **/
-    transition: opacity 200ms ease-in-out;
-  }
-
-  a:hover {
-    color: $color_02;
-  }
-} 
-
-/** Sirve para transformar la navegación cuando pulsamos el "botón" de menú**/
-.nav-toggle:checked ~ nav { 
-  transform: scale(1,1);
-}
-
-/** Sirve para transformar los links cuando pulsamos el "botón" de menú**/
-.nav-toggle:checked ~ nav a { 
-  opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
-}
 
 
 /*** Incluimos el MIXIN media-query para pantallas mayores de 800px (variable $on-laptop)***/
 @include media-query($on-laptop) { 
+  .site-header{
 
-  .nav-toggle-label {
-    display: none;
-  }
+    grid-template-areas: '. lg lg . nv nv nv nv nv nv nv nv nv .';
 
-  .site-nav {
-
-    all: unset; /* Reseteamos la configuración para las transformaciones en pantallas pequeñas*/
-
-    grid-column-end: -1;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    a {
-
-      opacity: 1;
-      position: relative;
-      margin-bottom: 0;
-      margin-right: 1em;
-      text-align: center;
-      max-width: 150px;
-    }
-    
-    /****************************************
-    * Las siguientes declaraciones sirven para 
-    * mostrar una línea al situar el ratón
-    *  sobre un item del navegador 
-    *****************************************/
-    a::before {
-      content: '';
-      display: block;
-      height: 5px;
-      background: black;
-      position: absolute;
-      bottom: -0.5em;
-      left: 0;
-      right: 0;
-      transform: scale(0, 1);
-      transform-origin: left;
-      transition: transform ease-in-out 250ms;
+    .nav-toggle-label {
+      display: none;
     }
 
-    a:hover::before {
-      transform: scale(1, 1);
+    .nav-logo {
+      grid-area: lg;
+    }
+
+    .site-nav {
+
+      grid-area: nv;
+      all: unset; /* Reseteamos la configuración para las transformaciones en pantallas pequeñas*/
+
+      grid-column-end: -1;
+
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      a {
+
+        opacity: 1;
+        position: relative;
+        margin-bottom: 0;
+        margin-right: 1em;
+        text-align: center;
+        max-width: 150px;
+      }
+      
+      /****************************************
+      * Las siguientes declaraciones sirven para 
+      * mostrar una línea al situar el ratón
+      *  sobre un item del navegador 
+      *****************************************/
+      a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        bottom: -0.5em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transform-origin: left;
+        transition: transform ease-in-out 250ms;
+      }
+
+      a:hover::before {
+        transform: scale(1, 1);
+      }
     }
   }
 }
