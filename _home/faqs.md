@@ -1,7 +1,10 @@
 ---
-title: faqs
-permalink: /faqs/
+position: 5
+type: faqs
 ---
+
+## FAQS
+
 ## Our School
 
 ### How big is the school?

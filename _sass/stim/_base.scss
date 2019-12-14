@@ -23,7 +23,10 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
-  
+
+  display: grid;
+  grid-template-columns: 15px 1fr 15px;
+
 }
 
 
@@ -88,7 +91,13 @@ a {
   }
 }
 
+/***********
+ * Lists
+ ***********/
 
+ol, ul {
+  list-style: none;
+}
 
 /***********
  * Flexbox
@@ -97,59 +106,6 @@ a {
   display: flex;
   background-color: DodgerBlue;
  }
-
-
-/*****************
- *     GRID 
- *****************/
-
- .grid-container {
-
-  display: grid;
-
-  grid-template-columns: repeat(6, 1fr);
-  column-gap: 20px;
-  row-gap: 0px;
-  align-content: center;
-}
-
-.grid-item {
-
-  margin: 0;
-  grid-column: 1 / span 6;
-
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  column-gap: 20px;
-  row-gap: 0px;
-  justify-content: space-around;
-
-}
-
-
-@include media-query($on-medium) {
-
-  .grid-container {
-  
-  grid-template-columns: repeat(12, minmax(auto, 80px));
-  column-gap: 40px;
-  row-gap: 0px;
-
-  padding: 0 0; 
-  }
-  
-  .grid-item {
-
-    margin: 0;
-    grid-column: 1 / span 12;
-
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 40px;
-    row-gap: 0px;
-
-  }
-}
 
 
 /***************

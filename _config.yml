@@ -24,10 +24,12 @@ kramdown:
   parse_block_html: true
 
 collections:
+  home:
+    output: false
   products:
     output: true
   faqs:
-    output: true
+    output: false
   
 defaults:
   - scope:

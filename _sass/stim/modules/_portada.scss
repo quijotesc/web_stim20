@@ -2,20 +2,29 @@
 *      PORTADA
 ********************/ 
 
-.portada {
+.hero {
+
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: 15px repeat(12, 1fr) 15px;
+    grid-gap: 20px;
+    justify-items: center;
 
     overflow: hidden;
+
+    ul {
+        grid-column: 2 / -2;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        grid-column: 2 / -2;
+    }
 }
 
-.portada-img {
 
-    grid-column: 1 / -1;
-    z-index: -10;
-    object-fit: cover;
-}
 
-.portada-logo {
-
-    grid-column: 1 / -1;
-
-}
