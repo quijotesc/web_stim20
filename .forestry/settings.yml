@@ -16,11 +16,6 @@ sections:
   label: Posts
   create: all
 - type: directory
-  path: _faqs
-  label: Faqs
-  create: all
-  match: "**/*"
-- type: directory
   path: _products
   label: Products
   create: all
