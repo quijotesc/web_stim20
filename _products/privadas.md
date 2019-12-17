@@ -1,8 +1,10 @@
 ---
+layout: private
 type: private
 price1: "17,50"
 price2: "17,00"
 price3: "16,50"
+permalink: /private-lessons/
 ---
 
 #### PRIVATE LESSONS
@@ -20,5 +22,5 @@ HOURS | PRICE
 60 to 99 | {{ page.price3 }}  €/h
 
 [BOOK NOW]({{ baseurl }}){: .btn_01 .btn-book}
-[+info]({{ baseurl }}){: .btn_02 .btn-info}
+[+info]({{ baseurl }}/private-lessons/){: .btn_02 .btn-info}
 {: .card-buttons}

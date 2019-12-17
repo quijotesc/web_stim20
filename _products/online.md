@@ -1,8 +1,10 @@
 ---
+layout: online
 type: online
 price1: "15,00"
 price2: "14,50"
 price3: "14,00"
+permalink: /online-lessons/
 ---
 
 #### ONLINE LESSONS
@@ -20,5 +22,5 @@ HOURS | PRICE
 60 to 99 | {{ page.price3 }}  €/h
 
 [BOOK NOW]({{ baseurl }}){: .btn_01 .btn-book}
-[+info]({{ baseurl }}){: .btn_02 .btn-info}
+[+info]({{ baseurl }}/online-lessons/){: .btn_02 .btn-info}
 {: .card-buttons}

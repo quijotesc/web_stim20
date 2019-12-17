@@ -1,8 +1,10 @@
 ---
+layout: intensive
 type: intensive
 price1: "6,00"
 price2: "5,50"
 price3: "5,00"
+permalink: /intensive-lessons/
 ---
 
 #### INTENSIVE COURSES
@@ -20,5 +22,5 @@ HOURS | PRICE
 60 to 99 | {{ page.price3 }}  €/h
 
 [BOOK NOW]({{ baseurl }}){: .btn_01 .btn-book}
-[+info]({{ baseurl }}){: .btn_02 .btn-info}
+[+info]({{ baseurl }}/intensive-lessons/){: .btn_02 .btn-info}
 {: .card-buttons}
