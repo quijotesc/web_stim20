@@ -1,6 +1,14 @@
 ---
-position: 6
+position: 7
 type: contacto
+title: Contacto
 ---
 
-### Contacta con nosotros
+### Contact
+
+Full name
+Email / Telephone
+
+Your text
+
+I have read and blablabla

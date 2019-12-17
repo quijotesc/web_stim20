@@ -3,26 +3,30 @@
 ********************/ 
 .cursos {
 
-    grid-column: 2 / span 1;
+    grid-column: 1 / -1;
 
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 15px repeat(12, 1fr) 15px;
     grid-gap: 20px;
     align-content: center;
 
     h2 {
         text-align: center;
-        grid-column-end: span 12;
+        grid-column: 1 / -1;
+    }
+
+    p{ 
+        grid-column: 2 / span 12;
     }
 
     .card-cursos {
 
-        grid-column-end: span 12;
+        grid-column: 2 / span 12;
 
         max-width: 280px;
-        background: $bg_color_01;
+        background: $bg_color_00;
         margin: 15px auto;
-        border: $card-border solid $bg_color_01;
+        border: $card-border solid $bg_color_00;
         border-radius: $card_radius;
         display: flex;
         flex-wrap: wrap;
@@ -31,7 +35,7 @@
         padding: $card-padding;
 
         h4 {
-            background: $bg_color_01;
+            background: $bg_color_00;
             font-size: $big-font-size;
             color: $font_color_01;
             text-align: center;
@@ -41,7 +45,7 @@
 
         p {
 
-            background: $bg_color_00;
+            background: $bg_color_01;
             padding: 0;   
             margin: $card-margin;  
         }
@@ -53,13 +57,13 @@
             list-style: none;
             margin: 15px 0 10px;
             padding: 15px 0;
-            background: $bg_color_00;
+            background: $bg_color_01;
         }
         
         .card-buttons {
 
             margin: $card-margin;
-            background: $bg_color_01;
+            background: $bg_color_00;
             .btn-book {
                 float: left;
                 margin-right: 5px;

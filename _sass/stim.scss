@@ -5,19 +5,21 @@
  * Color
  ************/
 
- $text-color: rgb(0, 0, 0) !default;
+ $color_00: #3c4e62 !default;
+ $color_01: #E0BC75 !default;
+ $color_02: #008000 !default; 
+ $color_03: #DE9C01 !default;
+
  $brand-color: #3c4e62 !default;
+ $text-color: rgb(0, 0, 0) !default;
  
- $bg_color_00: #ffffff !default;
- $bg_color_01: #3c4e62 !default;
+ $bg_color_00: #3c4e62 !default;
+ $bg_color_01: #ffffff !default;
  $bg_color_02: #DE9C01 !default;
  $bg_color_03: #85bb97 !default;
  
  $bg_color_nav: rgba(60, 78, 98, 0.85);
  $bg_color_footer:#3C4E62 !default;
- 
- $color_01: #E0BC75 !default;
- $color_02: #008000 !default; 
  
  $grey-color: #828282 !default;
  $grey-color-light: lighten($grey-color, 40%) !default;
@@ -34,6 +36,7 @@ $font_02: Arial !default;
 $font_color_00: $brand-color !default;
 $font_color_01: #FFFFFF !default;
 $font_color_02: #000000 !default;
+$font_color_03: $color_03 !default;
 
 $base-font-size: 16px !default;
 $base-font-weight: 400 !default;
@@ -45,7 +48,6 @@ $footer-font-size: $base-font-size * 0,8 !default;
 
 $base-line-height: 1.5 !default;
 $spacing-unit: 30px !default;
-
 
 
 $table-text-align: left !default;
@@ -97,6 +99,8 @@ $on-laptop: 1060px !default;
   "stim/footer", 
   "stim/modules/portada",
   "stim/modules/cursos",
+  "stim/modules/incluido",
+  "stim/modules/activities",
   "stim/modules/escuela",
   "stim/modules/banner",
   "stim/modules/contacto",

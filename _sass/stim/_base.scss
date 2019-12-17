@@ -16,7 +16,7 @@ body {
 
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
-  background-color: $bg_color_00;
+  background-color: $bg_color_01;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -46,17 +46,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: $font_01;
 }
 
-.section-title {
-  background: $bg_color_01;
+h2 {
+  background: $bg_color_00;
   color: $font_color_01;
   text-align: center;
-
-  grid-column: 1 / -1;
 }
+
 
 /************
  * Paragraphs

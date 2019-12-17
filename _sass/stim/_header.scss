@@ -29,7 +29,7 @@
     display:none;
   }
 
-  /** Botón para mostrar menús  ***/
+  /** NAVIGATION **/
   .nav-toggle-label{ 
 
     position: absolute;
@@ -39,13 +39,14 @@
     height: 100%;
     display: flex;
     align-items: center;
+
   }
   .nav-toggle-label span, 
   .nav-toggle-label span::before,
   .nav-toggle-label span::after {
 
     display: block;
-    background-color: $font_color_02;
+    background-color: $font_color_01;
     height: 2px;
     width: 2em;
     border-radius: 2px;
@@ -80,7 +81,7 @@
     a {
       margin-bottom: 1em;
       margin-right: 1em;
-      color: $font_color_02;
+      color: $font_color_01;
       text-decoration: none;
       font-size: $nav-font-size;
       text-transform: uppercase;
@@ -91,7 +92,7 @@
     }
 
     a:hover {
-      color: $color_02;
+      color: $font_color_03;
     }
   } 
 
@@ -109,19 +110,11 @@
 }
 
 
-
-
-
-
-/** NAVIGATION ***/
-
-
-
 /*** Incluimos el MIXIN media-query para pantallas mayores de 800px (variable $on-laptop)***/
 @include media-query($on-laptop) { 
   .site-header{
 
-    grid-template-areas: '. lg lg . nv nv nv nv nv nv nv nv nv .';
+    grid-template-areas: '. lg lg lg . . . nv nv nv nv nv nv nv';
 
     .nav-toggle-label {
       display: none;
@@ -133,11 +126,9 @@
 
     .site-nav {
 
-      grid-area: nv;
       all: unset; /* Reseteamos la configuración para las transformaciones en pantallas pequeñas*/
-
-      grid-column-end: -1;
-
+      grid-area: nv;
+      margin-right: 0;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -160,10 +151,10 @@
       a::before {
         content: '';
         display: block;
-        height: 5px;
-        background: black;
+        height: 3px;
+        background: white;
         position: absolute;
-        bottom: -0.5em;
+        bottom: -0.25em;
         left: 0;
         right: 0;
         transform: scale(0, 1);

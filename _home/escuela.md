@@ -1,16 +1,13 @@
 ---
-position: 3
-type: escuela
+position: 4
+type: school
+Title: The school
 ---
 
 ## The School
 
-This school was born with two main objectives:
+#### The teachers
 
-### Happy Students
+We want people who enjoy teaching Spanish and get involved in the long-term project. All the important decisions to ensure the school’s growth are discussed and decided as a team.
 
-It is very important for us that each person reaches his/her objectives by the end of the course. The experience should be rewarding in every way: cultural, educational and especially at a personal level.
-
-### Happy Teachers
-
-We are people who enjoy teaching Spanish and get involved in the long-term project. All the important decisions to ensure the school’s growth are discussed and decided as a team: the course content and fees, salaries, new hires, etc. We created this School as a tool to unite the efforts of various different autonomous teachers, in order to provide a better learning and quality service and improve performance by not focusing on finding new students.
+STiM specialises in teaching Spanish as a foreign language and our greatest asset is our teachers. The academic team consists of native Spanish speakers, with extensive experience in teaching Spanish, who have received specific training. We try to keep up-to-date with a view to providing a dynamic, fun and effective programme.

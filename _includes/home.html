@@ -6,8 +6,13 @@
         {{module.content}}
       {% when "cursos" %}
         {{module.content}}
-        {% include cursos.html %}
-      {% when "escuela" %}
+        {% include cursos.html %}  
+      {% when "included" %}
+        {{module.content}}
+      {% when "activities" %}
+        {{module.content}}
+        {% include activities.html %}
+      {% when "school" %}
         {{module.content}}
         {% include map.html %}
       {% when "banner_scroll" %}

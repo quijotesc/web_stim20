@@ -1,6 +1,7 @@
 ---
-position: 5
+position: 6
 type: faqs
+title: FAQs
 ---
 
 ## FAQS

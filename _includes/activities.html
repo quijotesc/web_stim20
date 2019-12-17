@@ -1,0 +1,6 @@
+{% for item in site.data.activities %}
+    {%- if item.name -%}
+        <p>{{ item.name }}</p>
+        <img src="{{ site.baseurl }}{{ item.imagelink}}" alt="item.name">
+    {%- endif -%}
+{% endfor %} 
