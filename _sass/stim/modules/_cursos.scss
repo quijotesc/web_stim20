@@ -2,85 +2,82 @@
 *     CURSOS
 ********************/ 
 .cursos {
-
-    grid-column: 1 / -1;
-
-    display: grid;
-    grid-template-columns: 15px repeat(12, 1fr) 15px;
-    grid-gap: 20px;
-    align-content: center;
-
-    h2 {
-        text-align: center;
-        grid-column: 1 / -1;
+    
+    p {
+        text-align: left;
+        margin-left: 15px;
     }
-
-    p{ 
-        grid-column: 2 / span 12;
+    ul{
+        li {
+            margin: 15px 0px;
+        }
     }
+    .container-cursos {
 
-    .card-cursos {
-
-        grid-column: 2 / span 12;
-
-        max-width: 280px;
-        background: $bg_color_00;
-        margin: 15px auto;
-        border: $card-border solid $bg_color_00;
-        border-radius: $card_radius;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        flex-direction: column;
-        text-align: center;
-        padding: $card-padding;
 
-        h4 {
-            background: $bg_color_00;
-            font-size: $big-font-size;
-            color: $font_color_01;
-            text-align: center;
-            margin: $card-margin;
-            margin-bottom: 10px; 
-        }
-
-        p {
-
-            background: $bg_color_01;
-            padding: 0;   
-            margin: $card-margin;  
-        }
-
-        table {
-
-            align-self: center;
-            width: 100%; 
-            list-style: none;
-            margin: 15px 0 10px;
-            padding: 15px 0;
-            background: $bg_color_01;
-        }
-        
-        .card-buttons {
-
-            margin: $card-margin;
-            background: $bg_color_00;
-            .btn-book {
-                float: left;
-                margin-right: 5px;
-            }
-            .btn-info {
-                float: right;
-                margin-left: 5px;
-
-            }
-        }        
-    } 
-}
-
-@include media-query($on-medium) {
-    .cursos {
         .card-cursos {
-            grid-column-end: span 6; 
+
+            max-width: 280px;
+            background: $bg_color_00;
+            margin: 15px auto;
+            border: $card-border solid $bg_color_00;
+            border-radius: $card_radius;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-align: center;
+            padding: $card-padding;
+
+            h4 {
+                background: $bg_color_00;
+                font-size: $big-font-size;
+                color: $font_color_01;
+                text-align: center;
+                margin: $card-margin;
+                margin-bottom: 10px; 
+            }
+
+            p {
+                background: $bg_color_01;
+                margin: $card-margin;  
+                text-align: center;
+            }
+
+            table {
+                align-self: center;
+                width: 100%; 
+                list-style: none;
+                margin: 15px 0 10px;
+                padding: 10px 0;
+                background: $bg_color_01;
+            }
+            
+            .card-buttons {
+                margin: $card-margin;
+                padding: 0;
+                background: $bg_color_00;
+                .btn-book { 
+                    float: left;
+                    margin-right: 5px;
+                }
+                .btn-info {
+                    float: right;
+                    background-color: $bg_color_06;
+                    border: 2px solid $bg_color_06;
+                    color: $font_color_01;
+                    background-color: $bg_color_06;
+
+                    &:hover {
+                        background-color: transparent;
+                        a {
+                        color: $font_color_06;
+                        }
+                    }
+                }
+            }        
         }
-    }   
+    }
 }

@@ -3,7 +3,7 @@
  ****************************/
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+dl, dd, ol, ul, figure, table {
   margin: 0;
   padding: 0;
 }
@@ -23,12 +23,7 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
-
-  display: grid;
-  grid-template-columns: 15px 1fr 15px;
-
 }
-
 
 
 /****************
@@ -54,6 +49,11 @@ h2 {
   background: $bg_color_00;
   color: $font_color_01;
   text-align: center;
+  padding: 15px 0px;
+  margin-bottom: 15px;
+}
+h4 {
+  font-weight: 600;
 }
 
 
@@ -73,11 +73,11 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 0%);
+    color: darken($font_color_01, 0%);
   }
 
   &:hover {
-    color: $text-color;
+    color: $font_color_01;
     text-decoration: none;
   }
 
@@ -98,37 +98,41 @@ ol, ul {
   list-style: none;
 }
 
-/***********
- * Flexbox
- ***********/
- .flex-container {
-  display: flex;
-  background-color: DodgerBlue;
- }
-
-
 /***************
  *  BUTTONS
  ***************/
 
- .btn_01 {
-
-  background-color: $bg_color_02;
+ .btn {
+  border-radius: 8px;
+  border: 2px solid $color_03;
   color: $font_color_01;
-  border-radius: 8px;
-  padding: 14px 25px;
-  display: inline-block;
-  max-width: max-content;
-}
-
-
-
-.btn_02 {
   background-color: $bg_color_03;
-  border-radius: 8px;
-  padding: 14px 40px;
+  padding: 16px 32px;
+  margin: 0 auto;
+  max-width: 150px;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
+  font-size: $base-font-size;
+  font-weight: 500;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+  &:visited {
+    a { 
+      color: darken($font_color_01, 0%);
+    }
+  }
+
+  &:hover {
+    background-color: transparent;
+    a {
+      color: $font_color_03;
+    }
+  }
 }
+
 
 /*********
  * ICONS
@@ -148,78 +152,3 @@ ol, ul {
     padding-top: 5px;
   }
 }
-
-
-/***************
- * Blockquotes
-
- blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
-  letter-spacing: -1px;
-  font-style: italic;
-
-  > :last-child {
-    margin-bottom: 0;
-  }
-}
-
-
-
-/**********
- * Tables
- 
-table {
-  margin-bottom: $spacing-unit;
-  width: 100%;
-  text-align: $table-text-align;
-  color: lighten($text-color, 18%);
-  border-collapse: collapse;
-  border: 1px solid $grey-color-light;
-  tr {
-    &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
-    }
-  }
-  th, td {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
-  }
-  th {
-    background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
-  }
-  td {
-    border: 1px solid $grey-color-light;
-  }
-}
-
- * Wrapper
- 
-.wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
-}
-
- * Clearfix
-
-%clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
- ************/

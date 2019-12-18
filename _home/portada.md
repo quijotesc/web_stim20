@@ -6,7 +6,7 @@ backgroundImage: cabecera_home.jpg
 backgroundColor:
 ---
 
-- ![{{site.title}}]({{ site.baseurl }}/assets/img/logo.png)
+![{{site.title}}]({{ site.baseurl }}/assets/img/logo.png)
 
-[BOOK NOW]({{site.basurl}}/booking)
-{:.btn_01}
+[BOOK A COURSE]({{site.basurl}}/booking)
+{:.btn}

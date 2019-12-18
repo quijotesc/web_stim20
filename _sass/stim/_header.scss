@@ -4,8 +4,6 @@
 
 .site-header {
 
-  grid-column: 1 / -1;
-
   background-color: $bg_color_nav;
   min-height: $spacing-unit * 1.5;
 
@@ -21,8 +19,8 @@
   .nav-logo {
 
     img {
-      margin-left: 1em;
-      max-width: 40px;
+      margin-left: 25px;
+      max-width: 35px;
     }
   }
   .nav-toggle {
@@ -92,7 +90,7 @@
     }
 
     a:hover {
-      color: $font_color_03;
+      color: $font_color_05;
     }
   } 
 
@@ -114,7 +112,7 @@
 @include media-query($on-laptop) { 
   .site-header{
 
-    grid-template-areas: '. lg lg lg . . . nv nv nv nv nv nv nv';
+    grid-template-areas: '. lg . . . . . nv nv nv nv nv nv';
 
     .nav-toggle-label {
       display: none;
@@ -122,6 +120,10 @@
 
     .nav-logo {
       grid-area: lg;
+      margin-left: 15px;
+
+      img {
+      }
     }
 
     .site-nav {
@@ -134,7 +136,6 @@
       align-items: center;
 
       a {
-
         opacity: 1;
         position: relative;
         margin-bottom: 0;

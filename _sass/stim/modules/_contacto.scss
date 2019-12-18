@@ -1,13 +1,4 @@
 .contacto {
     
-    grid-column: 1 / -1;
-
-    display: grid;
-    grid-template-columns: 15px repeat(12, 1fr) 15px;
-    grid-gap: 20px;
-    justify-items: center;
-
-    h1,h2,h3,h4,p,ul{
-        grid-column: 2 / span 12;
-    }
+    
 }

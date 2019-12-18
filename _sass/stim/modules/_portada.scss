@@ -4,46 +4,29 @@
 
 .hero {
  
-    grid-column: 1 / -1;
-
     background: url(/assets/img/cabecera_home.jpg) no-repeat center top fixed;
+    min-height: 600px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
-    display: grid;
-    grid-template-columns: 15px repeat(12, 1fr) 15px;
-    grid-template-rows: 0.2fr auto auto auto;
-    grid-gap: 20px;
-    justify-items: center;
-
     overflow: hidden;
 
-    ul {
-        grid-column: 2 / -2;
-        grid-row: 2 / span 1;
-
-        img {
-            width: 100%;
-        }
-    }
-
     p {
-        grid-column: 2 / -2;
-        grid-row: 3 / span 1;
-
-    }
-
-    ol {
-        grid-column: 1 / -1;
-        grid-row: 1 / -1;
-        z-index: -10;
-
         img {
-            object-fit: cover;
-        }
+            display: block;
+            max-width: 100%;
+            margin: 60px auto;
+        }    
     }
+
+    .btn{
+
+        display: block;
+        margin: 40px auto;
+    }
+    
 
 }
 

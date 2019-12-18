@@ -4,32 +4,4 @@
 
 .school {
 
-    grid-column: 2 / span 1;
-
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
-    align-content: center;
-
-    h2 {
-        text-align: center;
-        grid-column: 1 / -1;
-    }
-
-    h3 {
-        grid-column: 1 / -1;
-    }
-    
-    p {
-        grid-column: 1 / -1;
-    } 
-    
-    ul {
-        grid-column: 1 / -1;
-    }
-
-    .map
-    {
-        grid-column: 1 / -1;
-    } 
 }

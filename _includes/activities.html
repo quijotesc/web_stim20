@@ -1,6 +1,8 @@
 {% for item in site.data.activities %}
+<div class="activity">
     {%- if item.name -%}
-        <p>{{ item.name }}</p>
         <img src="{{ site.baseurl }}{{ item.imagelink}}" alt="item.name">
+        <p>{{ item.name }}</p>
     {%- endif -%}
+</div>
 {% endfor %} 

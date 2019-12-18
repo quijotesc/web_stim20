@@ -2,28 +2,31 @@
 
 
 /************
- * Color
- ************/
+*   Color
+************/
 
- $color_00: #3c4e62 !default;
- $color_01: #E0BC75 !default;
- $color_02: #008000 !default; 
- $color_03: #DE9C01 !default;
+$color_00: #3c4e62 !default;
+$color_01: #ffffff !default;
+$color_02: #000000 !default;
+$color_03: #DE9C01 !default;
+$color_04: #E0BC75 !default;
+$color_05: #67ce67 !default;
+$color_06: #85bb97 !default;
 
- $brand-color: #3c4e62 !default;
- $text-color: rgb(0, 0, 0) !default;
+$brand-color: $color_00 !default;
+$text-color: $color_02 !default;
+
+$bg_color_00: $color_00 !default;
+$bg_color_01: $color_01 !default;
+$bg_color_03: $color_03 !default;
+$bg_color_06: $color_06 !default;
  
- $bg_color_00: #3c4e62 !default;
- $bg_color_01: #ffffff !default;
- $bg_color_02: #DE9C01 !default;
- $bg_color_03: #85bb97 !default;
- 
- $bg_color_nav: rgba(60, 78, 98, 0.85);
- $bg_color_footer:#3C4E62 !default;
- 
- $grey-color: #828282 !default;
- $grey-color-light: lighten($grey-color, 40%) !default;
- $grey-color-dark:  darken($grey-color, 25%) !default;
+$bg_color_nav: rgba(60, 78, 98, 0.85);
+$bg_color_footer:#3C4E62 !default;
+
+$grey-color: #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
 
 /************
  * Font
@@ -34,9 +37,12 @@ $font_01: "Ubuntu" !default;
 $font_02: Arial !default;
 
 $font_color_00: $brand-color !default;
-$font_color_01: #FFFFFF !default;
-$font_color_02: #000000 !default;
+$font_color_01: $color_01 !default;
+$font_color_02: $color_02 !default;
 $font_color_03: $color_03 !default;
+$font_color_05: $color_05 !default;
+$font_color_06: $color_06 !default; 
+
 
 $base-font-size: 16px !default;
 $base-font-weight: 400 !default;

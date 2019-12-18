@@ -4,8 +4,6 @@
  **************/
 .site-footer {
 
-  grid-column: 1 / -1;
-  
   border-top: 1px solid $grey-color-light;
   background-color: $bg_color_footer;
 
@@ -26,7 +24,7 @@
     color: $font_color_01;
   }
   a:hover {
-    color: $color_02;
+    color: $color_05;
   }
 
   p {
@@ -67,10 +65,3 @@
 
   }
 }
-
-
-  /*** Incluimos el MIXIN media-query para pantallas mayores de 800px (variable $on-laptop)***/
-@include media-query($on-laptop) { 
-
-}
- 

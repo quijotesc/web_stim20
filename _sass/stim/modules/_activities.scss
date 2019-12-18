@@ -1,13 +1,18 @@
 .activities {
     
-    grid-column: 2 / span 1;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 15px;
 
-    display: grid;
-    grid-template-columns: 15px repeat(12, 1fr) 15px;
-    grid-gap: 20px;
-    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    h1,h2,h3,h4,p,ul,img {
-        grid-column: 2 / span 12;
+    .activity {
+        margin: 15px;
+        text-align: center;
     }
+
 }

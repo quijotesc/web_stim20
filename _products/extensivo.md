@@ -21,6 +21,6 @@ HOURS | PRICE
 30 to 59 | {{ page.price2 }} €/h
 60 to 99 | {{ page.price3 }}  €/h
 
-[BOOK NOW]({{ baseurl }}){: .btn_01 .btn-book}
-[+info]({{ baseurl }}/group-lessons/){: .btn_02 .btn-info}
+[BOOK NOW]({{ baseurl }}){: .btn .btn-book}
+[+info]({{ baseurl }}/group-lessons/){: .btn .btn-info}
 {: .card-buttons}

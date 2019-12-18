@@ -1,12 +1,12 @@
 - name: Home
   link: /
-- name: Cursos
+- name: Our Courses
   link: /
-- name: La Escuela
-  link: /
-- name: About
+- name: The school
   link: /about.html
-- name: Blog
+- name: News
   link: /blog.html
 - name: Contacto
+  link: /
+- name: Book a course
   link: /

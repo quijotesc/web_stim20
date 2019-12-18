@@ -4,14 +4,4 @@
 
 .faqs {
 
-    grid-column: 2 / span 1;
-
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
-    justify-items: center;
-
-    h1, h2, h3, h4, h5, h6, p, ul {    
-        grid-column-end: span 12;     
-    }
 }
