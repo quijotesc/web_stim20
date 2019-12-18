@@ -1,10 +1,10 @@
 ---
-position: 7
+position: 8
 type: contacto
 title: Contacto
 ---
 
-### Contact
+## Contact
 
 Full name
 Email / Telephone

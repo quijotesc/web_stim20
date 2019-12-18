@@ -1,5 +1,5 @@
 ---
-position: 5
+position: 6
 type: banner
 title: Banner
 ---

@@ -25,6 +25,17 @@ body {
   font-kerning: normal;
 }
 
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    display: block;
+    text-align: left;
+    margin: 15px;
+}
+
 
 /****************
  * MAIN element
@@ -112,7 +123,6 @@ ol, ul {
   max-width: 150px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: $base-font-size;
   font-weight: 500;
   -webkit-transition-duration: 0.4s; /* Safari */

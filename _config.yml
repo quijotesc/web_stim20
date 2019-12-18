@@ -8,6 +8,7 @@ safe: true
 
 email: info@spanishteachersmalaga.com
 phone: +34 619140300
+phone2: +34 744615709
 address_1: Plaza Victoria 6, 1ºB
 address_2: 29012 - Málaga
 
@@ -26,8 +27,10 @@ kramdown:
 collections:
   home:
     output: false
+  extensive:
+    output: false
   products:
-    output: true
+    output: false
   faqs:
     output: false
   

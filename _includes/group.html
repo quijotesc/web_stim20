@@ -1,9 +1,0 @@
-{% assign sorted = (site.products | sort: 'position') %}
-{% for module in sorted  %}
-  <section class="{{module.type}}">
-    {% case module.type %}
-      {% when "group" %}
-        {{module.content}}
-    {% endcase %}
-  </section>
-{% endfor %}

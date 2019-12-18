@@ -8,11 +8,16 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 
     .activity {
         margin: 15px;
-        text-align: center;
+
+        p {
+            margin: auto;
+            text-align: center;
+            max-width: 90px;
+        }
     }
 
 }

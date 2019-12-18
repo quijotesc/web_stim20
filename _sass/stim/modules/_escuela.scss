@@ -3,5 +3,14 @@
 ********************/ 
 
 .school {
+    
+    h2,h4,p, ul {
+        padding: 0 15px;
+    }
 
+    .map {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
 }

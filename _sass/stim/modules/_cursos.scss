@@ -1,17 +1,8 @@
 /*******************
 *     CURSOS
 ********************/ 
-.cursos {
-    
-    p {
-        text-align: left;
-        margin-left: 15px;
-    }
-    ul{
-        li {
-            margin: 15px 0px;
-        }
-    }
+.cursos, .extensive {
+        
     .container-cursos {
 
         display: flex;

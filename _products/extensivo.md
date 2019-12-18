@@ -1,10 +1,8 @@
 ---
-layout: group
-type: group
+type: extensive
 price1: "6,00"
 price2: "5,50"
 price3: "5,00"
-permalink: /group-lessons/
 ---
 
 #### GROUP LESSONS
@@ -22,5 +20,5 @@ HOURS | PRICE
 60 to 99 | {{ page.price3 }}  €/h
 
 [BOOK NOW]({{ baseurl }}){: .btn .btn-book}
-[+info]({{ baseurl }}/group-lessons/){: .btn .btn-info}
+[+info]({{ baseurl }}/extensive/){: .btn .btn-info}
 {: .card-buttons}
