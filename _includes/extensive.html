@@ -1,0 +1,19 @@
+{% assign sorted = (site.extensive | sort: 'position') %}
+{% for module in sorted  %}
+  <section class="{{module.type}}">
+    {% case module.type %}
+      {% when "hero" %}
+        {{module.content}}
+      {% when "cursos" %}
+        {{module.content}}
+      {% when "schedule" %}
+        {{module.content}}
+      {% when "included" %}
+        {{module.content}}
+      {% when "activities" %}
+        {{module.content}}
+      {% when "extensive" %}
+        {{module.content}}
+    {% endcase %}
+  </section>
+{% endfor %}
