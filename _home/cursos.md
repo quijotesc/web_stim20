@@ -4,7 +4,7 @@ type: cursos
 Title: Cursos
 ---
 
-## Nuestros cursos
+## Spanish Courses
 
 - Learn Spanish in small groups (3 to 6 students)
 
